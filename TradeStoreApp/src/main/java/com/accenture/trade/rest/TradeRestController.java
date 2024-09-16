@@ -52,6 +52,7 @@ public class TradeRestController {
 	@GetMapping("/all")
 	public ResponseEntity<List<Trade>> findAllTrades() {
 		List<Trade> tradeList = tradeService.findAllTrades();
+		System.out.println("Hi Sareeshkumar How are you: ");
 		return new ResponseEntity<List<Trade>>(tradeList, HttpStatus.OK);
 	}
 
