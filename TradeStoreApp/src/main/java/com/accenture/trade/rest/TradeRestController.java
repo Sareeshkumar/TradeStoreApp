@@ -44,8 +44,7 @@ public class TradeRestController {
 		ResponseEntity<String> resp = null;
 		String id = tradeService.savetrade(request).getTradeId();
 		resp = new ResponseEntity<String>("Trade '"+id+"' created", HttpStatus.CREATED);
-		System.out.println("Hi sareesh I'M new Trader How are you! ");
-		log.info("save() method completed:");
+		log.info("save() method completed By Trader:" +id);
 
 		return resp;
 	}
